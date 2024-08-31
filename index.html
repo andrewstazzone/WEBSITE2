@@ -5,244 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>NAMEEEEEE</title> <!-- NAME OF RESTURANT-->
 	 <link rel ="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <link href="https://www.w3schools.com/w3css/4/w3.css">
-  <style> 
-  @keyframes fadein{
-    from { opacity: 0;}
-    to{opacity: 1;}
-  }
-  html{
-    scroll-behavior: smooth;
-  }
-  body{
-   background-color: rgb(29, 27, 27);
-  } 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+ <style>
   
-#phone_number{
-    text-decoration: none;
-    color:rgb(18, 19, 19);
-    font-size: 23px;
-    font-family: 'Croissant one';
-}
-#reservation{
-  text-decoration: none;
-    color:rgb(18, 19, 19);
-  font-size: 23px;
-  font-family: 'Croissant one';
-
-}
-#location{
-  text-decoration: none;
-   color:rgb(18, 19, 19);
-  font-size:23px;
-  font-family: 'Croissant one';
-}
-.home_nav
-{
-  font-family: 'Croissant one';
-  font-size: 20px;
-  
-}
-  /* above to move nav bar*/
-.about_nav{
-  font-family: 'Croissant one';
-  font-size:20px;
-}
-.menu_nav{
-  font-family: 'Croissant one';
-  font-size: 20px;
-}
-.specials_nav{
-  font-family: 'Croissant one';
-  font-size: 20px;
-}
-.contact_us_nav{
-  font-family: 'Croissant one';
-  font-size: 20px;
-}
-#ABOUT{
-   background-color:rgb(249, 220, 238);
-  overflow: auto;
- 
-}
-.about{
-   font-size:30px;
-   text-align: center;
-   margin-top: 20px;
-  
-}
- #SPECIALS{
-  color:rgb(29, 27, 27);
- }
- .specials{
-  font-size:30px;
-   text-align: center;
-   margin-top: 20px;
-  
- }
- .carousel-inner> .item> img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 100%;
- }
-
-
-  </style>
-  
-   </head>
-<body>
-  
-
-
-  <div class="container-fluid w3-mobile w3-reflexive" > <!-- HEADER COLUMNS WIDTH FIT-->
-  <div class="row ">
-    <div class="col onebar" style="background-color: #c4a5e8; text-align: left; " >
-      <span class="onebar_text "style="color:blue;"> <a id="phone_number"href="tel3478533543"> 347-853-3543</a> </span> <!--ADD HYPERLINK FOR PHONE NUMBER-->
+ </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"> <h1>Arielles <i class="fa-solid fa-martini-glass" style="color:pink;"></i> </h1></div>
+    <div class="hamburger">
+      <div class="line"> </div>
+      <div class="line"> </div>
+      <div class="line"> </div>
     </div>
-    <div class="col twobar"style="background-color: #c4a5e8;  text-align: center;">
-      <span class= "twobar_text "style="color:blue;"> <a id="reservation"href=" ">BOOK TABLE </a> </a></span><!-- ADD HYPER LINK BOOK RESERVATION -->
-    </div>
-    <div class="col thirdbar"style="background-color:#c4a5e8;  text-align: right; " >
-      <span class="thirdbar_text "style="color:blue;"> <a id="location">LOCATION</a></span> <!-- ADD HYPERLINK LOCATION -->
-    
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light "style="background-color: #c4a5e8; margin-top: -9px;"> 
-      <div class="container-fluid" style="background-color: #c4a5e8;;" >
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse"  id="navbarNavDropdown"><!--GET TO BE ABEL TO CLICK IT OPEN-->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active home_nav" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">                                                             <!--make into IDs and add them in a href to have them atuto scroll-->
-              <a class="nav-link active about_nav" aria-current="page" href="#ABOUT">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle menu_nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                MENUS
-              </a>
-             
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Brunch Menu</a></li> <!--PUT DINNER, BRUNCH, AND COCKLIST HYPERLNKC-->
-                <li><a class="dropdown-item" href="#">Dinner Menu</a></li>
-                <li><a class="dropdown-item" href="#">Cocktail Menu</a></li>
-                <li><a class="dropdown-item" href="#">Desert Menu</a></li>
-              </ul>
-              <li class="nav-item">
-                <a class="nav-link active specials_nav" aria-current="page" href="#SPECIALS">Specials</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link active contact_us_nav" aria-current="page" href="#">Contact Us</a>
-            </li>
-
-            
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav class="nav-bar">
+      <ul>
+        <li style="list-style-type: none;"> <a href=""> Home</a></li>
+        <li style="list-style-type: none;"> <a href="#about"> About</a></li>
+        <li style="list-style-type: none;"> <a href="#menus"> Menus</a></li>
+        <li style="list-style-type: none;"> <a href="#specialss"> Specials</a></li>
+        <li style="list-style-type: none;"> <a href="#storeinformation"> Store Information</a></li>
+        <li style="list-style-type: none;"> <a href="#contactus"> Contact us</a></li>
+      </ul>
     </nav>
-</div>
+    
+    </header>
+    <!--<div class="container">
 
-<!--ADD ALTERNATOVE TEXT TO ALL IMAGES-->
-<!--MAKE LOCATION A GOOGLE MAP HYPERLINK -->
-<!---->
-<div> <!--BIG DIV-->
-
-  <div> <!--SEMI BIG DIV-->
-  
-      <div class=" logo" >
-        <img src="Images/3.png" class="img-fluid" alt="..." style="margin-left: 30px; margin-top: 60px; height: 550px; animation: fadein 2s ease-in;
-        animation-fill-mode: fowards;
-        animation-iteration-count: 1; opacity: 1;" >
-        
-        <div class="parallax container-fluid"></div>
-       </div>
-        
-       <div class="container-fluid" id="ABOUT"style="" > 
-            <div><img src="Images/sponge.jpeg" class="img-fluid" alt="..." style="height:550px; padding: 2%; float:left;">
-            </div>
-                      <div style="text-align: center; margin-top: 15px;"> <span class="about"style="text-align:center;" > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit amet consectetur harum similique ut. Exercitationem ipsum sint, nostrum alias dignissimos eveniet doloremque perspiciatis doloribus corporis molestias quo, vero, tempore maiores?<a href=""></a></span>
-                     </div>
-        </div>  
-<br>
-<br><!--GET TEXT IN BOTH ABOUT AND SPECIALS DIV TO BE CENTRED -->
-<br>
-<br>
-<br>
+      <nav>
+          <div class="logo">
+            <h1>Arielles <i class="fa-solid fa-martini-glass" style="color:pink;"></i> </h1>
+            
+          </div>
+          <ul>
+            <li> <a href=""> Home</a></li>
+            <li> <a href="#about"> About</a></li>
+            <li> <a href="#menus"> Menus</a></li>
+            <li> <a href="#specialss"> Specials</a></li>
+            <li> <a href="#storeinformation"> Store Information</a></li>
+            <li> <a href="#contactus"> Contact us</a></li>
+           <i id="bar" class="fa-solid fa-bars"></i> 
+           
+          </ul>
+      </nav> -->
+    <div class="main">
+      <div class="mainText">
+        <h1> Try our Delious affordable foood<br> along with our Home made Cocktailes</h1>
+        <p> WE GOT DEM SPECIALS BITCH DEM MOTHA FUCKIN SEASOAL SOUPS THaT WILL Make YOUR TITS TIGHEN  and your balls throb try it now or else imma fuck dat old sack you call a grandma</p>
+        <button> Book A Table</button>
+      </div>
+      <img src="Images/BURGER.jpg" alt="">
+    </div>
 <br>
 <br>
 <br>
 <br>
-
-<div class="container-fluid"> <h1 style="text-align: center; font-size: 70px; margin-top: 20px;"> Our Specials This Week </h1><div>
-        <div>
-            <div class=" container-fluid" id="SPECIALS" style="margin-top: 35px;">
-              
-              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="Images/BURGER.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Images/BURGER.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Images/BURGER.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-                        <div class="container-fluid" style="text-align: center;margin-top: 15px;"> <span class="specials"style="color:white; text-align:center; float:right; " > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit amet consectetur harum similique ut. Exercitationem ipsum sint, nostrum alias dignissimos eveniet doloremque perspiciatis doloribus corporis molestias quo, vero, tempore maiores?<a href=""></a></span>
-                       </div>
-            </div>
-
-
-        </div>
-  <!--here add your specials div and create your contents inside with their own div,
-  in here contain loop pictureswith arrow buttons if you would like to go back that are fluid and  when clicked it stays on that one picture, or when the 
-  meal you want is clicked, that pictire pops up
-  also include just we have seasonal soups,-->
-
-
-  <!--Finally add footer with contant info, stroes ours, and media-->
+<br>
+<br>
+<br> <div id="about"></div>
+    <div class="main_about ">
+      <div class="mainText_about">
+        <h1> About</h1>
+        <p> WE GOT DEM SPECIALS BITCH DEM MOTHA FUCKIN SEASOAL SOUPS THaT WILL Make YOUR TITS TIGHEN  and your balls throb try it now or else imma fuck dat old sack you call a grandma</p>
+      </div>
+      <img src="Images/BURGER.jpg" alt="">
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br> 
+<div id="specialss">
+  <div class="head">
+    <h1> Our Speacials this week and seasonal soup</h1>
+  </div>
+  <div class="specials">
+    <div class="card">
+      <img src="Images/BURGER.jpg" alt="">
+      <p> Specials name</p>
+      <button class="moreinfo">More info</button>
+    </div>
+    <div class="card">
+      <img src="Images/BURGER.jpg" alt="">
+      <p> Specials name</p>
+      <p>Whats in it</p>
+    </div>
+    <div class="card">
+      <img src="Images/BURGER.jpg" alt="">
+      <p> Specials name</p>
+      <p>Whats in it</p>
+    </div>
+    <div class="card">
+      <img src="Images/BURGER.jpg" alt="">
+      <p> Specials name</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa architecto in quis saepe ex alias aut iure dolorum quod perferendis, nesciunt distinctio sit nostrum tempora accusamus eveniet! Exercitationem, quam iusto?</p>
+    </div>
+    <div class="card">
+      <img src="Images/BURGER.jpg" alt="">
+      <p> Specials name</p>
+      <p>Whats in it</p>
+    </div>
+    <div class="card">
+      <img src="Images/BURGER.jpg" alt="">
+      <p> Specials name</p>
+     <p>Whats in it</p>
+    </div>
   </div>
 
-</div>
-
   
-   
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="/script.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"> </script> 
+</div>
+    </div>
+    <div id="storeinformation"></div>
+    <div id="contactus"></div>
+    <div class="footer">
+      <div class="text">
+        <h3> Store Hours</h3>
+        <p> Monday: </p>
+        <p> Monday: </p>
+        <p> Monday: </p>
+        <p> Monday: </p>
+        <p> Monday: </p>
+        <p> Monday: </p>
+        <p> Monday: </p>
+      </div>
+      <div class="text">
+        <h3> Location</h3>
+        <p> Monday: </p>
+       </div>
+      <div class="text">
+        <h3> Contact Us</h3>
+        <p> Phone number  </p>
+        <p> Email </p>
+      </div>
+      <div class="text">
+        <h3> Follow Us</h3>
+        <p>Instagram<i class="fa-brands fa-instagram"></i></p>
+      </div>
 
-        </body>
+    </div>
+    </div>
+    <script >
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick =function() {
+    navBar=document.querySelector(".nav-bar");
+    navBar.classList.toggle("active");
+}
+    </script>
+
+    
+
+      
+   
+    </body>
+        </html>
