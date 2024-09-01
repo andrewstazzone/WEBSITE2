@@ -5,6 +5,7 @@ html{
 *{
   margin:0%;
   padding:0%;
+  
  
   
 }
@@ -23,7 +24,7 @@ header{
   top: 0%;
 }
 .logo{
-  font-size: 28px;
+  font-size: 35px;
   font-weight: bold;
   color: #8a06e8;
   padding: 40px;
@@ -45,6 +46,7 @@ header{
   margin: 0 5px;
   text-decoration: none;
 }
+
 .nav-bar ul li a:hover{
   color:pink;
   background:rgb(43, 46, 46);
@@ -77,15 +79,18 @@ header{
 .mainText p{
 margin-top:1.5rem;
 color:rgb(196, 255, 204);
+font-size:30px;
 }
 .mainText button{
   width: 140px;
-  height: 38px;
+  height: 75px;
   background-color: blue;
   color: white;
-  margin-top: 1.5rem;
+  margin-top: 1.7rem;
+  margin-left: 37%;
   font-size: 18px;
   cursor: pointer;
+  
 
 }
 .main_about{
@@ -163,13 +168,25 @@ margin-top: 12px;
   .logo {
     padding: 30px;
   }
+  .main button {margin-left: 37%;
+  }
+}
+@media only screen and (max-width:1500px){
+    
+  
+.fa-martini-glass{
+  font-size: 50px;
+}
   }
   @media only screen and (max-width:1200px){
     
     .logo {
       padding: 35px;
-      font-size: medium;
+      font-size: 20px;
     }
+  .fa-martini-glass{
+    font-size: 35px;
+  }
     }
   @media only screen and (max-width:1100px){
     .header{
@@ -179,7 +196,11 @@ margin-top: 12px;
       padding: 15px;
     }
     }
+    .mainText button{
+      margin-left:1%;
+    }
     
+      
 @media screen and (max-width:1100px){
   
   .main{
@@ -199,11 +220,27 @@ margin-top: 12px;
   .logo h1{
     font-size:1.7rem;
   }
-  .fa-martini-glass
-  {
-    font-size:1.5rem;
+  .logo {
+    padding: 35px;
+    font-size:20px
+    
   }
+.fa-martini-glass{
+  font-size: 25px;
 }
+  
+}
+@media only screen and (max-width:1000px){
+  .logo {
+    padding: 10px;
+    font-size:20px
+    
+  }
+.fa-martini-glass{
+  font-size: 25px;
+}
+}
+    
 @media only screen and (max-width:900px){
   .hamburger{
    display: block;
@@ -244,15 +281,23 @@ margin-top: 12px;
   .nav-bar ul li a{
     margin-bottom: 8px;;
   }
+  .logo h1{
+    font-size:40px;
+  }
+  .fa-martini-glass
+  {
+    font-size:35px;
+  }
+
 }
 @media screen and (max-width:890px)
 {
   .logo h1{
-    font-size:1.3rem;
+    font-size:40px;
   }
   .fa-martini-glass
   {
-    font-size:1.3rem;
+    font-size:35px;
   }
 }
 
@@ -263,6 +308,8 @@ margin-top: 12px;
   }
   .main img{
     margin-top: 1.5rem;
+    width:90%;
+   
   }
   .main_about{
     width:90%;
@@ -270,14 +317,18 @@ margin-top: 12px;
   }
   .main_about img{
     margin-top: 1.5rem;
+   
   }
 }
 @media screen and (max-width:620px){
   .main img{
    width:500px;
+   margin-left: 7%;
+
   }
   .main_about img{
     width: 500px;
+    margin-left: 7%;
   }
   
 }
@@ -295,16 +346,54 @@ margin-top: 12px;
    .mainText_about{
      margin-top: 1.5rem;
    }
+   
  
 }
-
-@media screen and (max-width:470px){
+@media screen and (max-width:550px){
   .main img{
    width:400px;
+   justify-content: center;
   }
   .main_about img{
     width: 400px;
   }
+}
+@media screen and (max-width:490px){
+  .main img{
+   width:400px;
+   justify-content: center;
+  }
+  .main_about img{
+    width: 400px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:460px){
+  .mainText 
+  {
+    text-align:center
+  }
+  .mainTest_about{
+    text-align: center;
+  }
+  .main img{
+   width:350px;
+   justify-content: center;
+   margin-left: 7%;
+  }
+  .main_about img{
+    width: 350px;
+    justify-content: center;
+    margin-left:7%;
+  }
+}
+
+  
+@media screen and (max-width:470px){
+  .mainText h1{
+  font-size:30px;
+  }
+  
   
 }
 
