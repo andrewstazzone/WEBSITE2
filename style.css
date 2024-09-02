@@ -10,7 +10,7 @@ html{
   
 }
 body{
-  background-color: rgb(43, 46, 46);
+  background-color: rgb(233, 230, 233);
 }
 header{
   width: 100%;
@@ -20,14 +20,16 @@ header{
   justify-content: space-between;
   position: fixed;
   padding: 0;
-  background-color: grey;
+  background-color: #111111;
   top: 0%;
 }
 .logo{
   font-size: 35px;
-  font-weight: bold;
   color: #8a06e8;
   padding: 40px;
+  font-family: Sacramento;
+  font-style:italic;
+  margin-top: 10px;;
 }
 .hamburger{
   display:none;
@@ -45,18 +47,24 @@ header{
   transition: 0.2s;
   margin: 0 5px;
   text-decoration: none;
+  font-family: 'Croissant One';
+  
 }
 
 .nav-bar ul li a:hover{
-  color:pink;
-  background:rgb(43, 46, 46);
+  color:#8a06e8;
+  background:white;
 }
 .nav-bar ul li a:active{
   color:pink;
-  background:rgb(43, 46, 46);
+  background:#8a06e8;
 }
-
-
+.visible{
+  display: block;
+}
+.hidden{
+  display:none;
+}
 
 .main{
   display: flex;
@@ -67,24 +75,26 @@ header{
 .main img{
   width:600px;
   margin-right: 1%;
+  
 }
 .mainText{
   margin-top: 33px;
-  color:aquamarine;
+  color:#8a06e8;
   margin-left: 2%;
 }
 .mainText h1{
   font-size:45px;
+  
 }
 .mainText p{
 margin-top:1.5rem;
-color:rgb(196, 255, 204);
+color:#111111;
 font-size:30px;
 }
 .mainText button{
   width: 140px;
   height: 75px;
-  background-color: blue;
+  background-color:#111111;
   color: white;
   margin-top: 1.7rem;
   margin-left: 37%;
@@ -97,7 +107,7 @@ font-size:30px;
   display: flex;
   gap: 45px;
   justify-content: center;
-  margin-top: 156px;;
+  margin-top: 156px;
 }
 .main_about img{
   width:600px;
@@ -105,15 +115,18 @@ font-size:30px;
 }
 .mainText_about{
   margin-top: 33px;
-  color:aquamarine;
+  color:#8a06e8;
   margin-left: 2%;
+  text-align: center;
+ 
 }
 .mainText_about h1{
   font-size:45px;
 }
 .mainText_about p{
-margin-top:1.5rem;
-color:rgb(196, 255, 204);
+margin-top:1rem;
+color:#111111;
+font-size:30px;
 }
 .specials{
   display: flex;
@@ -138,28 +151,30 @@ color:rgb(196, 255, 204);
   width: 100px;
   height: 30px;
   font-size:1rem;
-  background-color: brown;
+  background-color: white;
   color:blue;
   border:none;
   cursor:pointer;
 }
 .head{
   text-align: center;
-  color:yellow;
+  color:#8a06e8;
   padding: 88px;
 }
 
 .footer{
   display:flex;
   justify-content: space-around;
-  background-color: pink;
+  background-color: #111111;
   color: blueviolet;
   flex-wrap: wrap;
   padding: 66px;
-  margin-top: 66px;;
+  margin-top: 66px;
+  font-family: 'Croissant One';
 }
 .footer .text p{
 margin-top: 12px;
+color: pink;
 }
 @media only screen and (max-width:1300px){
   .header{
@@ -209,6 +224,8 @@ margin-top: 12px;
   }
   .main img{
     margin-top: 1.5rem;
+    justify-content: center;
+    margin-left: 22%;
   }
   .main_about{
     display: block;
@@ -216,13 +233,15 @@ margin-top: 12px;
   }
   .main_about img{
     margin-top: 1.5rem;
+    margin-left: 5%;
+    justify-content: center;
   }
   .logo h1{
-    font-size:1.7rem;
+    font-size:35px;
   }
   .logo {
     padding: 35px;
-    font-size:20px
+    
     
   }
 .fa-martini-glass{
@@ -231,9 +250,9 @@ margin-top: 12px;
   
 }
 @media only screen and (max-width:1000px){
-  .logo {
-    padding: 10px;
-    font-size:20px
+  .logo h1{
+    padding-right: 10px;
+    font-size: 30px;
     
   }
 .fa-martini-glass{
@@ -245,13 +264,19 @@ margin-top: 12px;
   .hamburger{
    display: block;
    cursor: pointer;
+   
   }
   .hamburger .line{
     width: 30px;
     height: 3px;
-    background: #801111;
+    background:#8a06e8 ;
     margin: 6px 10px;
+    
   
+  }
+  .nav-bar ul li a{
+    
+    font-size: 17px;
   }
   .nav-bar{
     height: 0;
@@ -260,7 +285,7 @@ margin-top: 12px;
     left: 0;
     right: 0;
     width: 100vw;
-    background: grey;
+    background: black;
     transition: 0.2s;
     overflow: hidden;
   }
@@ -282,7 +307,7 @@ margin-top: 12px;
     margin-bottom: 8px;;
   }
   .logo h1{
-    font-size:40px;
+    font-size:32px;
   }
   .fa-martini-glass
   {
@@ -300,15 +325,21 @@ margin-top: 12px;
     font-size:35px;
   }
 }
-
-@media screen and (max-width:700px){
-  .main{
-    width:90%;
-    border-radius: 1.5rem;
+@media screen and (max-width:550px){
+  .main img{
+   width:375px;
+   justify-content: center;
   }
+  .main_about img{
+    width: 375px;
+  }
+}
+
+@media screen and (max-width:850px){
+  
   .main img{
     margin-top: 1.5rem;
-    width:90%;
+    width:500px;
    
   }
   .main_about{
@@ -324,6 +355,7 @@ margin-top: 12px;
   .main img{
    width:500px;
    margin-left: 7%;
+   justify-content: center;
 
   }
   .main_about img{
@@ -345,6 +377,7 @@ margin-top: 12px;
    }
    .mainText_about{
      margin-top: 1.5rem;
+     text-align: center;
    }
    
  
@@ -367,15 +400,35 @@ margin-top: 12px;
     width: 400px;
     justify-content: center;
   }
+  .mainText{
+    text-align: center;
+  }
+  .mainText p{
+    text-align: center;
+  }
+  .mainText_about{
+    text-align: center;
+  }
+  .mainText_about p{
+    text-align: center;
+  }
 }
 @media screen and (max-width:460px){
   .mainText 
   {
+    margin-top: 0.8rem;
     text-align:center
+  }
+  .mainText p{
+    text-align: center;
   }
   .mainTest_about{
     text-align: center;
+    margin-top: 0rem;
   }
+  .mainTest_about p {
+    text-align: center;
+  };
   .main img{
    width:350px;
    justify-content: center;
@@ -391,9 +444,37 @@ margin-top: 12px;
   
 @media screen and (max-width:470px){
   .mainText h1{
-  font-size:30px;
+  font-size:35px;
   }
   
   
 }
+@media screen and (max-width:420px){
+  .mainText 
+  {
+    margin-top: 0.5rem;
+    text-align:center
+  }
+  .mainText p{
+    text-align: center;
+  }
+  .mainTest_about{
+    text-align: center;
+    margin-top: .3rem;
+  }
+  .mainTest_about p {
+    text-align: center;
+  }
+  .main img{
+   width:350px;
+   justify-content: center;
+   margin-left: 6%;
+  }
+  .main_about img{
+    width: 300px;
+    justify-content: center;
+    margin-left:0%;
+  }
+}
+
 
