@@ -1,0 +1,327 @@
+html{
+    scroll-behavior: smooth;
+  }
+  *{
+    margin:0%;
+    padding:0%;
+    
+   
+    
+  }
+  body{
+    background-color: rgb(233, 230, 233);
+  }
+  header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0;
+    background-color: #111111;
+    top: 0%;
+  }
+  .logo{
+    font-size: 35px;
+    color: #8a06e8;
+    padding: 40px;
+    font-family: Sacramento;
+    font-style:italic;
+    margin-top: 10px;;
+  }
+  .hamburger{
+    display:none;
+  }
+  .nav-bar ul{
+    display: flex;
+    
+  }
+  .nav-bar ul li a{
+    display: block;
+    color:whitesmoke;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+    font-family: 'Croissant One';
+    
+  }
+  
+  .nav-bar ul li a:hover{
+    color:#8a06e8;
+    background:white;
+  }
+  .nav-bar ul li a:active{
+    color:pink;
+    background:#8a06e8;
+  }
+  
+  
+  
+  .main_about{
+    display: flex;
+    
+    margin-top: 88px;
+  }
+  
+  .mainText_about{
+    margin-top: 33px;
+    color:#8a06e8;
+    margin-left: 2%;
+    text-align: center;
+   
+  }
+  .mainText_about h1{
+    font-size:45px;
+    text-align: center;
+    
+   
+  }
+  .mainText_about h2{
+    font-size:25px;
+    
+    
+   
+  }
+  .mainText_about p{
+  margin-top:1rem;
+  color:#111111;
+  font-size:20px;
+  }
+  
+  .head{
+    text-align: center;
+    color:#8a06e8;
+    padding: 88px;
+  }
+  
+  .footer{
+    display:flex;
+    justify-content: space-around;
+    background-color: #111111;
+    color: blueviolet;
+    flex-wrap: wrap;
+    padding: 66px;
+    margin-top: 66px;
+    font-family: 'Croissant One';
+  }
+  .footer .text p{
+  margin-top: 12px;
+  color: pink;
+  }
+  .footer .text a:hover{
+    color:#8a06e8;
+    background:white;
+    border-radius: 50px;
+  }
+  .footer .text a:active{
+    color:pink;
+    background:#8a06e8;
+    border-radius: 50px;
+  }
+  @media only screen and (max-width:1300px){
+    .header{
+      padding: 0 50px;
+    }
+    .logo {
+      padding: 30px;
+    }
+    
+  }
+  @media only screen and (max-width:1500px){
+      
+    .main_about{
+        display: block;
+        text-align: center;
+      }
+      
+  .fa-martini-glass{
+    font-size: 50px;
+  }
+    }
+    @media only screen and (max-width:1200px){
+      
+      .logo {
+        padding: 35px;
+        font-size: 20px;
+      }
+    .fa-martini-glass{
+      font-size: 35px;
+    }
+      }
+    @media only screen and (max-width:1100px){
+      .header{
+        padding: 0 30px;
+      }
+      .logo {
+        padding: 15px;
+      }
+      }
+      .mainText button{
+        margin-left:1%;
+      }
+      
+        
+  @media screen and (max-width:1100px){
+    
+    
+    .main_about{
+      display: block;
+      text-align: center;
+    }
+    
+    .logo h1{
+      font-size:35px;
+    }
+    .logo {
+      padding: 35px;
+      
+      
+    }
+  .fa-martini-glass{
+    font-size: 25px;
+  }
+    
+  }
+  @media only screen and (max-width:1000px){
+    .logo h1{
+      padding-right: 10px;
+      font-size: 30px;
+      
+    }
+  .fa-martini-glass{
+    font-size: 25px;
+  }
+  }
+      
+  @media only screen and (max-width:900px){
+    .hamburger{
+     display: block;
+     cursor: pointer;
+     
+    }
+    .hamburger .line{
+      width: 30px;
+      height: 3px;
+      background:#8a06e8 ;
+      margin: 6px 10px;
+      
+    
+    }
+    .nav-bar ul li a{
+      
+      font-size: 17px;
+    }
+    .nav-bar{
+      height: 0;
+      position:absolute;
+      top:80px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background: black;
+      transition: 0.2s;
+      overflow: hidden;
+    }
+    .nav-bar.active{
+      height:400px;
+    }
+    .nav-bar ul{
+      display: block;
+      width: fit-content;
+      margin: 80px auto 0 auto;
+      text-align: center;
+      transform: 0.5s;
+      opacity: 0;
+    }
+    .nav-bar.active ul{
+     opacity: 1;
+    }
+    .nav-bar ul li a{
+      margin-bottom: 8px;;
+    }
+    .logo h1{
+      font-size:32px;
+    }
+    .fa-martini-glass
+    {
+      font-size:35px;
+    }
+  
+  }
+  @media screen and (max-width:890px)
+  {
+    .logo h1{
+      font-size:40px;
+    }
+    .fa-martini-glass
+    {
+      font-size:35px;
+    }
+  }
+  
+  
+  @media screen and (max-width:850px){
+    
+    
+    .main_about{
+      
+      border-radius: 1.5rem;
+    }
+    
+  }
+  
+  
+  @media screen and (max-width:600px){
+
+    .main_about h1{
+      padding:66px;
+     }
+     .mainText_about{
+       margin-top: 1.5rem;
+       text-align: center;
+     }
+     
+   
+  }
+  
+  @media screen and (max-width:490px){
+    
+    
+    .mainText_about{
+      text-align: center;
+    }
+    .mainText_about p{
+      text-align: center;
+    }
+  }
+  @media screen and (max-width:460px){
+    
+    .mainTest_about{
+      text-align: center;
+     
+      margin-top: 0rem;
+    }
+    .mainTest_about p {
+     
+      margin-left: 50%;
+    }
+    
+  }
+  @media screen and (max-width:420px){
+   
+    .mainTest_about{
+      text-align: center;
+      margin-top: .3rem;
+    }
+    .mainTest_about p {
+      text-align: center;
+    }
+    
+  }
+  
+  
+  
