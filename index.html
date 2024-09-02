@@ -8,9 +8,12 @@
    <link href="https://www.w3schools.com/w3css/4/w3.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
- <style>
-  
- </style>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -52,12 +55,18 @@
           </ul>
       </nav> -->
     <div class="main">
+    
       <div class="mainText">
         <h1> Try our Delious affordable foood<br> along with our Home made Cocktailes</h1>
         <p> WE GOT DEM SPECIALS BITCH DEM MOTHA FUCKIN SEASOAL SOUPS THaT WILL Make YOUR TITS TIGHEN  and your balls throb try it now or else imma fuck dat old sack you call a grandma</p>
         <button> Book A Table</button>
       </div>
-      <img src="Images/BURGER.jpg" alt="">
+        <div class="slide-c">
+      <img src="Images/BURGER.jpg" id="img1" alt="" class="visible">
+      <img src="Images/sponge-copy.jpeg" id="img2" alt="" class="hidden">
+      <img src="Images/3.png" id="img3" alt="" class="hidden">
+      <img src="Images/MK IMAGE - Copy.jpg" id="img4" alt="" class="hidden">
+      </div>
     </div>
 <br>
 <br>
@@ -157,7 +166,26 @@
     navBar.classList.toggle("active");
 }
     </script>
+<script type="text/javascript">
+  
+  var activeImageId = 1;
+  var nextImageId = 1;
 
+  setInterval (function(){
+    nextImageId=nextImageId + 1;
+    if(nextImageId < 4){
+      document.getElementById("img" +activeImageId).classList.replace("visible","hidden");
+      document.getElementById("img" +nextImageId).classList.replace("hidden","visible");
+      activeImageId = nextImageId;
+    }
+      else{
+        document.getElementById("img" +activeImageId).classList.replace("visible","hidden");
+      document.getElementById("img" +nextImageId).classList.replace("hidden","visible");
+      activeImageId = 4;
+      nextImageId = 0;
+      }
+    },3000);
+</script>
     
 
       
