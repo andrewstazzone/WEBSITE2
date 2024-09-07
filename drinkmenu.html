@@ -19,7 +19,7 @@
     <header>
     
       <div class="logo"> </div>
-      <img src="Images/3.png" alt="" style="position: absolute; margin-top: 1.5rem; height: 200px; width: 250px; ">
+      <a href="index.html"><img src= "Images/3.png" alt="" style="position: absolute; margin-top: 1.5rem; height: 200px; width: 250px; margin-left: -17%;"> </a>
     <div class="hamburger">
       <div class="line"> </div>
       <div class="line"> </div>
@@ -118,6 +118,12 @@
       hamburger.onclick =function() {
     navBar=document.querySelector(".nav-bar");
     navBar.classList.toggle("active");
+}
+
+document.onclick=function(e){
+  if(!hamburger.contains(e.target)&&!hamburger.contains(e.target)){
+    navBar.classList.remove("active");
+  }
 }
     </script>
 

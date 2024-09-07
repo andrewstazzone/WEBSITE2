@@ -22,6 +22,16 @@ html{
     background-color: #111111;
     top: 0%;
   }
+  header a{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    padding: 0;
+    background-color: #111111;
+    top: 0%;
+  }
   .logo{
     font-size: 35px;
     color: #8a06e8;
@@ -213,7 +223,7 @@ html{
     }
     .nav-bar ul li a{
       
-      font-size: 17px;
+      font-size: 18px;
     }
     .nav-bar{
       height: 0;
@@ -375,6 +385,11 @@ html{
       
 
       };
+    }
+    @media screen and (max-width:655px){
+        .logo {
+          margin-left: -50%;
+        }
     }
   @media screen and (max-width:420px){
    

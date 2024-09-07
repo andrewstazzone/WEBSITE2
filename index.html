@@ -19,13 +19,13 @@
     <header>
     
       <div class="logo"> </div>
-      <img src="Images/3.png" alt="" style="position: absolute; margin-top: 1.5rem; height: 200px; width: 250px; ">
+      <a href="index.html"><img src= "Images/3.png" alt="" style="position: absolute; margin-top: 1.5rem; height: 200px; width: 250px; margin-left: -17%;"> </a>
     <div class="hamburger">
       <div class="line"> </div>
       <div class="line"> </div>
       <div class="line"> </div>
     </div>
-    <nav class="nav-bar" >
+    <nav class="nav-bar">
       <ul>
         <li style="list-style-type: none;"> <a href="#home"> Home</a></li>
         <li style="list-style-type: none;"> <a href="#about"> About</a></li>
@@ -38,7 +38,6 @@
     </nav>
     
     </header>
-    
     <div id="home"></div>
     <!--<div class="container">
 
@@ -58,39 +57,52 @@
            
           </ul>
       </nav> -->
+     <div class=" background" > 
     <div class="main">
+
     
       <div class="mainText">
-        <h1> Try our Delious affordable foood<br> along with our Home made Cocktailes</h1>
-        <p> WE GOT DEM SPECIALS BITCH DEM MOTHA FUCKIN SEASOAL SOUPS THaT WILL Make YOUR TITS TIGHEN  and your balls throb try it now or else imma fuck dat old sack you call a grandma</p>
-        <button> <a href="" style="text-decoration: none; color:whitesmoke"> Book A Table </a> </button>
+        <h1  style=" animation: fadein 2s ease-in;
+        animation-fill-mode: fowards;
+        animation-iteration-count: 1; opacity: 1"> Try our Delious affordable foood<br> along with our Home made Cocktailes</h1>
+        <p  style=" animation: fadein 2s ease-in;
+        animation-fill-mode: fowards;
+        animation-iteration-count: 1; opacity: 1 "> WE GOT DEM SPECIALS BITCH DEM MOTHA FUCKIN SEASOAL SOUPS THaT WILL Make YOUR TITS TIGHEN  and your balls throb try it now or else imma fuck dat old sack you call a grandma</p>
+        <button  style=" animation: fadein 2s ease-in;
+        animation-fill-mode: fowards;
+        animation-iteration-count: 1; opacity: 1"> <a href="" style="text-decoration: none; color:whitesmoke"> Book A Table </a> </button>
       </div>
         <div class="slide-c">
-      <img src="Images/BURGER.jpg" id="img1" alt="" class="visible">
-      <img src="Images/sponge-copy.jpeg" id="img2" alt="" class="hidden">
-      <img src="Images/3.png" id="img3" alt="" class="hidden">
+      <img src="Images/BURGER.jpg" id="img1" alt="" class="visible" >
+      <img src="Images/sponge-copy.jpeg" id="img2" alt="" class="hidden" >
+      <img src="Images/3.png" id="img3" alt="" class="hidden" >
       <img src="Images/MK IMAGE - Copy.jpg" id="img4" alt="" class="hidden">
       </div>
     </div>
-    
+  </div>
+      
 <br>
 <br>
 <br>
 <br>
 
-<br> <div id="about"></div>
-    <div class="main_about ">
+
+
+
+<div id="about" ></div>
+
+
+    <div class="main_about">
+     
       <div class="mainText_about">
+        
         <h1> About</h1>
         <p> WE GOT DEM SPECIALS BITCH DEM MOTHA FUCKIN SEASOAL SOUPS THaT WILL Make YOUR TITS TIGHEN  and your balls throb try it now or else imma fuck dat old sack you call a grandma</p>
       </div>
       <img src="Images/BURGER.jpg" alt="">
     </div>
-<br>
-<br>
-<br>
-<br>
-<br>
+   
+    
 <br>
 <br>
 <br>
@@ -171,6 +183,11 @@
     navBar=document.querySelector(".nav-bar");
     navBar.classList.toggle("active");
 }
+document.onclick=function(e){
+  if(!hamburger.contains(e.target)&&!hamburger.contains(e.target)){
+    navBar.classList.remove("active");
+  }
+}
     </script>
 <script type="text/javascript">
   
@@ -190,10 +207,14 @@
       activeImageId = 4;
       nextImageId = 0;
       }
-    },3000);
+    },4100);
+ 
 </script>
     
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/path/to/parallax.js"></script>
+<script src="js/parallax.min"></script>
+<scripst src="js/jquery-3.4.1.min.js"></scripst>
       
    
     </body>
