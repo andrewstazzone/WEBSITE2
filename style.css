@@ -70,7 +70,7 @@ header a{
 .background{
   margin: 0;
   padding: 0;
-  background-image: url(Images/BG.jpg);
+background-image: url(Images/BG.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: 69%;
@@ -592,14 +592,7 @@ color: pink;
   
 }
 @media screen and (max-width:490px){
-  .main img{
-   width:400px;
-   justify-content: center;
-  }
-  .main_about img{
-    width: 400px;
-    justify-content: center;
-  }
+  
   .mainText{
     text-align: center;
   }
@@ -616,7 +609,7 @@ color: pink;
     margin-right: 100px;
    }
    .MENUS h1{
-    margin-right: -152px;
+    margin-left: 17%;
    }
   
 }
