@@ -14,7 +14,7 @@ html{
   
 }
 body{
-  background-color: rgba(31, 8, 31, 0.209);
+  background-color: rgb(251, 230, 247);
   
 }
 
@@ -70,7 +70,7 @@ header a{
 .background{
   margin: 0;
   padding: 0;
-background-image: url(Images/BG.jpg);
+background-color: rgb(36, 34, 36);
   background-size: cover;
   background-attachment: fixed;
   background-position: 69%;
@@ -547,6 +547,10 @@ color: pink;
     width: 500px;
     margin-left: 7%;
   }
+  .MENUS h1{
+    margin-left: 6%;
+   }
+  
   
 }
 
@@ -588,6 +592,14 @@ color: pink;
   .main_about img{
     width: 400px;
   }
+  
+  
+}
+@media screen and (max-width:620px){
+  
+  .MENUS h1{
+    margin-left: 8%;
+   }
   
   
 }
@@ -641,6 +653,17 @@ color: pink;
     justify-content: center;
     margin-left:7%;
   }
+  
+}
+@media screen and (max-width:445px){
+ 
+  .MENUS h1{
+    margin-left: 17%;
+   }
+   .MENUS button{
+    margin-right: 40%;
+   }
+  
   
 }
 
