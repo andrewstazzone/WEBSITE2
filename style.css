@@ -58,7 +58,7 @@ header a{
 .nav-bar ul li a{
   display: block;
   color:whitesmoke;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 25px;
   border-radius: 50px;
   transition: 0.2s;
@@ -223,6 +223,10 @@ margin-bottom: 100px;;
   flex-wrap:wrap;
   gap: 56px;
   justify-content: center;
+
+}
+.head{
+  font-family: 'Eyesome Script';
 }
 .specials img{
   width: 100%;
@@ -658,12 +662,9 @@ color: pink;
 @media screen and (max-width:445px){
  
   .MENUS h1{
-    margin-left: 17%;
+    margin-left: 23%;
    }
-   .MENUS button{
-    margin-right: 40%;
-   }
-  
+   
   
 }
 
